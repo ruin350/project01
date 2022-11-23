@@ -2,7 +2,12 @@
     box-sizing: border-box;
     font-size: 14px;
 }
-
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 html, body {
     margin: 0;
     width: 100%;
@@ -25,6 +30,11 @@ aside {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.23);
 
     background-color: white;
+}
+
+.content{
+    height: 92%;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 #map {
@@ -232,6 +242,8 @@ header {
     width: 50px;
     height: 48px;
     background-color: #ffffff00;
+
+    cursor: pointer;
 }
 
 .button-icon {
@@ -248,6 +260,10 @@ header {
     overflow: hidden;
 }
 
+.button-icon:hover{
+    background-color: #f0f0f0;
+}
+
 .button-icon i {
     color: #555555;
 }
@@ -255,4 +271,162 @@ header {
 .button-title {
     font-size: 10px;
     color: #a0a0a0;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 50%;
+    right: -18px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 0;
+    width: 18px;
+    height: 50px;
+
+    box-shadow: 2px 0px 2px rgba(0, 0, 0, 0.2);
+    background-color: white;
+
+    font-size: 10px;
+    color: #258fff;
+    
+    line-height: 0;
+    transform: translateY(-50%);
+    
+    cursor: pointer;
+}
+
+.book-mark-box{
+    width: 100%;
+    height: 143px;
+
+    padding: 24px 25px 17px 26px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.book-mark-box h3{
+    margin: 0;
+}
+
+.book-mark-box h3 a{
+    color: #333;
+}
+
+.book-mark{
+    padding: 0;
+}
+
+.book-mark li{
+    height: 28px;
+    padding: 0 0 8px 0;
+    
+}
+.bm:hover{
+    border-bottom: 1px solid #888;
+}
+
+.book-mark li:hover{
+    background-color: #258eff17;
+}
+
+.book-mark li i{
+    padding-right: 8px;
+    
+}
+
+.book-mark li a{
+    font-size: 13px;
+    color: #9e9e9e;
+    text-align: center;
+}
+
+.new-place{
+    width: 100%;
+    height: 143px;
+    margin: 0;
+    padding: 24px 25px 17px 26px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.new-place h6{
+    margin: 0;
+    font-size: 14px;
+}
+
+.new-place p{
+    margin: 0;
+    padding-top: 2px;
+    font-size: 12px;
+    color: #888;
+}
+
+.new-place button{
+    display: inline-block;
+    height: 26px;
+    padding: 0 9px;
+    margin-top: 12px;
+    border: 1px solid rgba(51,150,255,0.5);
+    border-radius: 3px;
+    line-height: 24px;
+    text-align: center;
+
+    background-color: #258fff;
+}
+
+.new-place a{
+    color: white;
+    font-size: 11px;
+}
+
+.new-place a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+.notice-list {
+    height: 4%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.notice-list span{
+    font-size: 10px;
+}
+
+.notice-list span a:hover{
+    border-bottom: 1px solid #333;
+}
+
+.notice-list a{
+    font-size: 12px;
+    color: #333;
+    
+}
+
+.notice-list a:hover{
+    border-bottom: 1px solid #333;
+    
+}
+
+.footer{
+    height: 4%;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+.footer a{
+    font-size: 12px;
+    color: #333;
+}
+
+.footer a:hover{
+    border-bottom: 1px solid #333;
+
 }
