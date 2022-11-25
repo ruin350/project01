@@ -206,7 +206,57 @@ header {
 .report-error {
     border-bottom: 1px solid #f0f0f0;
     height: 84px;
+    position: relative;
+    padding: 25px 26px 0;
+    box-sizing: border-box;
 }
+
+.location{
+    font-size: 14px;
+    font-weight: bold;
+    color: #222;
+    cursor: pointer;
+}
+
+.wt{
+    display: inline-block;
+    font-size: 12px;
+}
+
+
+.txt_bar{
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 0 2px;
+    background-color: #e2e2e2;
+}
+
+.wt-num{
+    display: inline-block;
+    padding: 0 0 3px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+}
+
+.wt-2{
+    color: #006bee;
+    padding-left: 3px;
+    font-size: 12px;
+}
+
+
+
+.report-bug{
+    position: absolute;
+    top: 21px;
+    left: 322px;
+    color: #999;
+    cursor: pointer;
+    font-size: 11px;
+}
+
 
 .info {
     border-bottom: 1px solid #f0f0f0;
@@ -322,10 +372,17 @@ header {
 }
 
 .book-mark li{
-    height: 28px;
-    padding: 0 0 8px 0;
-    
+    height: 28px;    
 }
+
+.book-mark-house{
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.book-mark-building{
+    padding-top: 8px;
+}
+
 .bm:hover{
     border-bottom: 1px solid #888;
 }
