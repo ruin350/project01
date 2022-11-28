@@ -2,7 +2,12 @@
     box-sizing: border-box;
     font-size: 14px;
 }
-
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 html, body {
     margin: 0;
     width: 100%;
@@ -14,9 +19,6 @@ html, body {
     height: 100%;
 }
 
-.invisible-aside {
-    left: -390px;
-}
 
 aside {
     position: fixed;
@@ -25,10 +27,18 @@ aside {
     left: 0px;
     width: 390px;
     height: 100%;
-
+    
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.23);
-
+    
     background-color: white;
+}
+
+.invisible-aside {
+    left: -390px;
+}
+.content{
+    height: 92%;
+    border-bottom: 1px solid #f0f0f0;
 }
 
 #map {
@@ -122,7 +132,7 @@ header {
     background-color: white;
 }
 
-.search-container {
+.search-container{
     position: relative;
 }
 
@@ -155,60 +165,6 @@ header {
     font-weight: 500;
 }
 
-.invisible-recent {
-    display: none;
-}
-
-.search-recent {
-    position: absolute;
-    left: 0px;
-    top: 44px;
-
-    border-top: 1px solid #f0f0f0;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    width: 100%;
-
-    background-color: white;
-
-    overflow: hidden;
-}
-
-.title-recent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 18px 16px 8px;
-    height: 42px;
-
-    font-size: 12px;
-    color: #555555;
-}
-
-.list-recent {
-    margin: 0;
-    padding: 4px 0px;
-}
-
-.favorite-recent {
-    padding: 0px 16px;
-    height: 32px;
-
-    background-color: #f0f0f0;
-}
-
-.button-recentoff {
-    border: none;
-    height: 100%;
-
-    background-color: #ffffff00;
-    font-size: 11px;
-    color: #555555;
-
-    cursor: pointer;
-}
-
 .fa-magnifying-glass {
     padding: 15px;
     font-size: 16px;
@@ -217,6 +173,59 @@ header {
     cursor: pointer;
 }
 
+.invisible-recent{
+    display: none;
+}
+
+.search-recent{
+    position: absolute;
+    left: 0;
+    top: 44px;
+    
+    border-top: 1px solid #f0f0f0;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    width: 100%;
+
+    background-color: white;
+
+    overflow: hidden;
+    
+}
+
+.title-recent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 18px 16px 8px ;
+    height: 42px;
+
+    font-size: 12px;
+    color: #555555;
+}
+
+.list-recent{
+    padding: 4px 0;
+    margin: 0;
+}
+
+.favorite-recent{
+    padding: 0 16px;
+    height: 32px;
+
+    background-color: #f0f0f0;
+}
+
+.button-recentoff{
+    border: none;
+    height: 100%;
+
+    background-color: #ffffff00;
+    font-size: 11px;
+    color: #555555;
+    cursor: pointer;
+}
 
 .menu {
     display: flex;
@@ -254,14 +263,60 @@ header {
     font-weight: 700;
 }
 
-.invisible-body {
-    display: none;
-}
-
 .report-error {
     border-bottom: 1px solid #f0f0f0;
     height: 84px;
+    position: relative;
+    padding: 25px 26px 0;
+    box-sizing: border-box;
 }
+
+.location{
+    font-size: 14px;
+    font-weight: bold;
+    color: #222;
+    cursor: pointer;
+}
+
+.wt{
+    display: inline-block;
+    font-size: 12px;
+}
+
+
+.txt_bar{
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 0 2px;
+    background-color: #e2e2e2;
+}
+
+.wt-num{
+    display: inline-block;
+    padding: 0 0 3px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000;
+}
+
+.wt-2{
+    color: #006bee;
+    padding-left: 3px;
+    font-size: 12px;
+}
+
+
+
+.report-bug{
+    position: absolute;
+    top: 21px;
+    left: 322px;
+    color: #999;
+    cursor: pointer;
+    font-size: 11px;
+}
+
 
 .info {
     border-bottom: 1px solid #f0f0f0;
@@ -315,7 +370,7 @@ header {
     overflow: hidden;
 }
 
-.button-icon:hover {
+.button-icon:hover{
     background-color: #f0f0f0;
 }
 
@@ -328,19 +383,19 @@ header {
     color: #a0a0a0;
 }
 
-.toggle-button {
+.toggle-button{
     position: absolute;
     top: 50%;
     right: -18px;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     border: none;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
-    padding: 0px;
+    padding: 0;
     width: 18px;
     height: 50px;
 
@@ -349,8 +404,146 @@ header {
 
     font-size: 10px;
     color: #258fff;
-    line-height: 0px;
+    
+    line-height: 0;
     transform: translateY(-50%);
-
+    
     cursor: pointer;
+}
+
+.book-mark-box{
+    width: 100%;
+    height: 143px;
+
+    padding: 24px 25px 17px 26px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.book-mark-box h3{
+    margin: 0;
+}
+
+.book-mark-box h3 a{
+    color: #333;
+}
+
+.book-mark{
+    padding: 0;
+}
+
+.book-mark li{
+    height: 28px;    
+}
+
+.book-mark-house{
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.book-mark-building{
+    padding-top: 8px;
+}
+
+.bm:hover{
+    border-bottom: 1px solid #888;
+}
+
+.book-mark li:hover{
+    background-color: #258eff17;
+}
+
+.book-mark li i{
+    padding-right: 8px;
+    
+}
+
+.book-mark li a{
+    font-size: 13px;
+    color: #9e9e9e;
+    text-align: center;
+}
+
+.new-place{
+    width: 100%;
+    height: 143px;
+    margin: 0;
+    padding: 24px 25px 17px 26px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.new-place h6{
+    margin: 0;
+    font-size: 14px;
+}
+
+.new-place p{
+    margin: 0;
+    padding-top: 2px;
+    font-size: 12px;
+    color: #888;
+}
+
+.new-place button{
+    display: inline-block;
+    height: 26px;
+    padding: 0 9px;
+    margin-top: 12px;
+    border: 1px solid rgba(51,150,255,0.5);
+    border-radius: 3px;
+    line-height: 24px;
+    text-align: center;
+
+    background-color: #258fff;
+}
+
+.new-place a{
+    color: white;
+    font-size: 11px;
+}
+
+.new-place a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+.notice-list {
+    height: 4%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.notice-list span{
+    font-size: 10px;
+}
+
+.notice-list span a:hover{
+    border-bottom: 1px solid #333;
+}
+
+.notice-list a{
+    font-size: 12px;
+    color: #333;
+    
+}
+
+.notice-list a:hover{
+    border-bottom: 1px solid #333;
+    
+}
+
+.footer{
+    height: 4%;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+.footer a{
+    font-size: 12px;
+    color: #333;
+}
+
+.footer a:hover{
+    border-bottom: 1px solid #333;
+
 }
