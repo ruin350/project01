@@ -29,7 +29,6 @@ class MapService{
         return this.#instance;
     }
     load() {
-        console.log("121")
         // 등록시 this. 필수
         this.addSearchInputEvent();
         this.addAsideToggleButtonEvent();

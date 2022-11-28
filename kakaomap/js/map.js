@@ -30,6 +30,7 @@ class MapService {
     }
 
     load() {
+        // 등록시 this. 필수
         this.addSearchInputEvent();
         this.addAsideToggleButtonEvent();
         this.addMenuTabEvent();
@@ -38,6 +39,8 @@ class MapService {
     addSearchInputEvent() {
         const searchInput = document.querySelector(".search-input");
 
+        // 클릭이 일어났을때 invisible-resent를 toggle시켜라
+        // toggle = on, off의 개념
         searchInput.onclick = () => {
             const searchRecent = document.querySelector(".search-recent");
             searchRecent.classList.toggle("invisible-recent");
@@ -51,6 +54,7 @@ class MapService {
         toggleButton.onclick = () => {
             const aside = document.querySelector("aside");
             aside.classList.toggle("invisible-aside");
+            // contains = 포함하고있는지 확인
             if(aside.classList.contains("invisible-aside")) {
                 toggleButton.textContent = "▶";
             }else {
@@ -80,6 +84,7 @@ class MapService {
 
 }
 
+// window 객체에 onload 되면 {실행문}실행
 window.onload = () => {
     MapService.getInstance().load();
 }
